@@ -12,7 +12,6 @@
 		0E37741A1EB81B850039B272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3774181EB81B850039B272 /* Main.storyboard */; };
 		0E37741C1EB81B850039B272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E37741B1EB81B850039B272 /* Assets.xcassets */; };
 		0E37741F1EB81B850039B272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E37741D1EB81B850039B272 /* LaunchScreen.storyboard */; };
-		0E37742A1EB81B850039B272 /* CIWorkflowSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */; };
 		0E3774351EB81B850039B272 /* CIWorkflowSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774341EB81B850039B272 /* CIWorkflowSampleUITests.swift */; };
 		0E3774441EB81D050039B272 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3774431EB81D050039B272 /* Unbox.framework */; };
 		0E3774491EB81DCC0039B272 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774481EB81DCC0039B272 /* Mock.swift */; };
@@ -48,7 +47,6 @@
 		0E37741E1EB81B850039B272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E3774201EB81B850039B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3774251EB81B850039B272 /* CIWorkflowSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIWorkflowSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIWorkflowSampleTests.swift; sourceTree = "<group>"; };
 		0E37742B1EB81B850039B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3774301EB81B850039B272 /* CIWorkflowSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIWorkflowSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3774341EB81B850039B272 /* CIWorkflowSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIWorkflowSampleUITests.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		0E3774281EB81B850039B272 /* CIWorkflowSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */,
 				0E37742B1EB81B850039B272 /* Info.plist */,
 				0E3774551EB82AEF0039B272 /* BirdTests.swift */,
 			);
@@ -331,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E37742A1EB81B850039B272 /* CIWorkflowSampleTests.swift in Sources */,
 				0E3774561EB82AEF0039B272 /* BirdTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
