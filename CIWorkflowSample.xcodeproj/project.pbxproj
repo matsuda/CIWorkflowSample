@@ -14,6 +14,7 @@
 		0E37741F1EB81B850039B272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E37741D1EB81B850039B272 /* LaunchScreen.storyboard */; };
 		0E37742A1EB81B850039B272 /* CIWorkflowSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */; };
 		0E3774351EB81B850039B272 /* CIWorkflowSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774341EB81B850039B272 /* CIWorkflowSampleUITests.swift */; };
+		0E3774441EB81D050039B272 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3774431EB81D050039B272 /* Unbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		0E3774301EB81B850039B272 /* CIWorkflowSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIWorkflowSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3774341EB81B850039B272 /* CIWorkflowSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIWorkflowSampleUITests.swift; sourceTree = "<group>"; };
 		0E3774361EB81B850039B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3774431EB81D050039B272 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
+		0E3774461EB81D450039B272 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3774441EB81D050039B272 /* Unbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +81,12 @@
 		0E3774081EB81B850039B272 = {
 			isa = PBXGroup;
 			children = (
+				0E3774461EB81D450039B272 /* Cartfile */,
 				0E3774131EB81B850039B272 /* CIWorkflowSample */,
 				0E3774281EB81B850039B272 /* CIWorkflowSampleTests */,
 				0E3774331EB81B850039B272 /* CIWorkflowSampleUITests */,
 				0E3774121EB81B850039B272 /* Products */,
+				0E3774421EB81D050039B272 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +131,14 @@
 			path = CIWorkflowSampleUITests;
 			sourceTree = "<group>";
 		};
+		0E3774421EB81D050039B272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E3774431EB81D050039B272 /* Unbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +149,7 @@
 				0E37740D1EB81B850039B272 /* Sources */,
 				0E37740E1EB81B850039B272 /* Frameworks */,
 				0E37740F1EB81B850039B272 /* Resources */,
+				0E3774451EB81D0D0039B272 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -256,6 +271,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E3774451EB81D0D0039B272 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Unbox.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E37740D1EB81B850039B272 /* Sources */ = {
@@ -416,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5YDXJ82CD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CIWorkflowSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -430,6 +467,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5YDXJ82CD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CIWorkflowSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
