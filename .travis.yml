@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8.3
+before_install:
+	- brew update
+	- brew install carthage
+	- carthage bootstrap --no-use-binaries --platform ios
+	- gem install xcpretty
+script:
+	- xcodebuild test -scheme CIWorkflowSample -configuration Debug -destination 'platform=iOS Simulator,OS=10.3,name=iPhone 7 Plus' | bundle exec xcpretty -c
