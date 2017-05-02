@@ -15,6 +15,9 @@
 		0E37742A1EB81B850039B272 /* CIWorkflowSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */; };
 		0E3774351EB81B850039B272 /* CIWorkflowSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774341EB81B850039B272 /* CIWorkflowSampleUITests.swift */; };
 		0E3774441EB81D050039B272 /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3774431EB81D050039B272 /* Unbox.framework */; };
+		0E3774491EB81DCC0039B272 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774481EB81DCC0039B272 /* Mock.swift */; };
+		0E37744E1EB8221A0039B272 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E37744D1EB8221A0039B272 /* user.json */; };
+		0E3774501EB8224C0039B272 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37744F1EB8224C0039B272 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		0E3774361EB81B850039B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3774431EB81D050039B272 /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 		0E3774461EB81D450039B272 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		0E3774481EB81DCC0039B272 /* Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		0E37744D1EB8221A0039B272 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		0E37744F1EB8224C0039B272 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,15 @@
 		0E3774131EB81B850039B272 /* CIWorkflowSample */ = {
 			isa = PBXGroup;
 			children = (
+				0E37744A1EB81E170039B272 /* Resources */,
 				0E3774141EB81B850039B272 /* AppDelegate.swift */,
 				0E3774161EB81B850039B272 /* ViewController.swift */,
 				0E3774181EB81B850039B272 /* Main.storyboard */,
 				0E37741B1EB81B850039B272 /* Assets.xcassets */,
 				0E37741D1EB81B850039B272 /* LaunchScreen.storyboard */,
 				0E3774201EB81B850039B272 /* Info.plist */,
+				0E3774481EB81DCC0039B272 /* Mock.swift */,
+				0E37744F1EB8224C0039B272 /* User.swift */,
 			);
 			path = CIWorkflowSample;
 			sourceTree = "<group>";
@@ -137,6 +146,14 @@
 				0E3774431EB81D050039B272 /* Unbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E37744A1EB81E170039B272 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E37744D1EB8221A0039B272 /* user.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +270,7 @@
 				0E37741F1EB81B850039B272 /* LaunchScreen.storyboard in Resources */,
 				0E37741C1EB81B850039B272 /* Assets.xcassets in Resources */,
 				0E37741A1EB81B850039B272 /* Main.storyboard in Resources */,
+				0E37744E1EB8221A0039B272 /* user.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3774501EB8224C0039B272 /* User.swift in Sources */,
 				0E3774171EB81B850039B272 /* ViewController.swift in Sources */,
 				0E3774151EB81B850039B272 /* AppDelegate.swift in Sources */,
+				0E3774491EB81DCC0039B272 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
