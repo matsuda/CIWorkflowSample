@@ -18,6 +18,8 @@
 		0E3774491EB81DCC0039B272 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774481EB81DCC0039B272 /* Mock.swift */; };
 		0E37744E1EB8221A0039B272 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E37744D1EB8221A0039B272 /* user.json */; };
 		0E3774501EB8224C0039B272 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37744F1EB8224C0039B272 /* User.swift */; };
+		0E3774541EB8284F0039B272 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774531EB8284F0039B272 /* Bird.swift */; };
+		0E3774561EB82AEF0039B272 /* BirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3774551EB82AEF0039B272 /* BirdTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		0E3774481EB81DCC0039B272 /* Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		0E37744D1EB8221A0039B272 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		0E37744F1EB8224C0039B272 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E3774531EB8284F0039B272 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		0E3774551EB82AEF0039B272 /* BirdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				0E3774201EB81B850039B272 /* Info.plist */,
 				0E3774481EB81DCC0039B272 /* Mock.swift */,
 				0E37744F1EB8224C0039B272 /* User.swift */,
+				0E3774531EB8284F0039B272 /* Bird.swift */,
 			);
 			path = CIWorkflowSample;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			children = (
 				0E3774291EB81B850039B272 /* CIWorkflowSampleTests.swift */,
 				0E37742B1EB81B850039B272 /* Info.plist */,
+				0E3774551EB82AEF0039B272 /* BirdTests.swift */,
 			);
 			path = CIWorkflowSampleTests;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				0E3774171EB81B850039B272 /* ViewController.swift in Sources */,
 				0E3774151EB81B850039B272 /* AppDelegate.swift in Sources */,
 				0E3774491EB81DCC0039B272 /* Mock.swift in Sources */,
+				0E3774541EB8284F0039B272 /* Bird.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E37742A1EB81B850039B272 /* CIWorkflowSampleTests.swift in Sources */,
+				0E3774561EB82AEF0039B272 /* BirdTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +585,7 @@
 				0E37743B1EB81B850039B272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E37743C1EB81B850039B272 /* Build configuration list for PBXNativeTarget "CIWorkflowSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +594,7 @@
 				0E37743E1EB81B850039B272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E37743F1EB81B850039B272 /* Build configuration list for PBXNativeTarget "CIWorkflowSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +603,7 @@
 				0E3774411EB81B850039B272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
