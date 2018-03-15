@@ -4,6 +4,8 @@ before_install:
 - brew update
 # - brew upgrade carthage
 - carthage bootstrap --platform ios
+before_script:
+     - bundle exec danger
 script:
 - xcodebuild test -scheme CIWorkflowSample -configuration Debug -destination 'platform=iOS
   Simulator,OS=10.3,name=iPhone 7 Plus' | bundle exec xcpretty -c
