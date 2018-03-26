@@ -170,6 +170,7 @@
 				0E37740E1EB81B850039B272 /* Frameworks */,
 				0E37740F1EB81B850039B272 /* Resources */,
 				0E3774451EB81D0D0039B272 /* Carthage */,
+				0E8214D7206890BA004CB941 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -311,6 +312,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		0E8214D7206890BA004CB941 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"$SRCROOT/bin/swiftlint\" >/dev/null; then\n  \"$SRCROOT/bin/swiftlint\"\nelse\n  echo \"error: Read \\\"$SRCROOT/bin/README.md\\\", download SwiftLint\"\n  exit -1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
