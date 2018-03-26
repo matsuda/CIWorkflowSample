@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode9.2
 before_install:
 - brew update
 # - brew upgrade carthage
@@ -8,7 +8,7 @@ before_script:
      - bundle exec danger
 script:
 - xcodebuild test -scheme CIWorkflowSample -configuration Debug -destination 'platform=iOS
-  Simulator,OS=10.3,name=iPhone 7 Plus' | bundle exec xcpretty -c
+  Simulator,OS=11.2,name=iPhone X' | bundle exec xcpretty -c
 notifications:
   slack:
     secure: Nlg6hzjPSR/cK/cXVAAqYCezJEPCjqjXlAP5FAEAEywgznZ7fctjAVE5e2j7lJIju/T+UFUhPrVZeOpcIzyElMrGMuXL1agWkoSvms4uXWMD59HyU/VdyzghG15W+jnPzchkx9aMFohne521FlQ9/RBP8OgvB6hN+JUCudwfM2Gi7/nDYPBs4hJWI+qbCEeqCmOIqO7HaNFrf0iJ0WnFqMYjqgZaBYXW+vGudP0iHpQjkSy7lDR5GuBqIGCv0Jy/104elm5gaqPHYLzG1SkH3oYy4R89ZALzVKyVlX/0PitI9737+NR1WD+gMkD19o58TcTQODO6FudSSBnHRTQaeFsEtSkF/Xoq8ChtYxn+RECsGprmhpaxiUXAwYYGmnXgmEejFki9Z60GPtMiELyNjzHwSoC2Gl9p2rDPOgAevfRXcFNsLWC52xELbqeLW6cU2Cg6uRWBpcI7clLODY1MweTlYVG2hkySW5BfrTx3x64WDyi4r9nk7QBlZy5XDzfLXibb22RVVCL8A2e3sGTL0n09s7/R+Gs3ODJsYE1AMMfrEzdCif2LKNbR5aC4MYZKPIMi0FlgBIrQ1DkPpjci1NSh/AauQpV8lGyOHE6C+zMJI+fYAexivaPdIeTfJbqIU+61cdjOnavh69fFGLp0T/adh+Y8dSHWTJSvZXAlCQM=
