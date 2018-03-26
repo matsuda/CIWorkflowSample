@@ -13,6 +13,7 @@ enum Mock {
         case json
     }
 
+    // swiftlint:disable:next identifier_name
     static func load(name: String, ext: Mock.FileExt = .json) -> Any? {
         guard let path = Bundle.main.path(forResource: name, ofType: ext.rawValue) else {
             return nil
